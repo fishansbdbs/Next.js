@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #222;
+  color: #eee;
+  text-align: center;
+  transition: background 0.5s;
+}
+
+.biome-forest {
+  background: #2c4216;
+}
+
+.biome-graveyard {
+  background: #3b3b3b;
+}
+
+.biome-volcano {
+  background: #451313;
+}
+
+#game {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+#enemyPanel, #teamPanel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.character, .enemy {
+  border: 1px solid #555;
+  padding: 10px;
+  margin: 5px;
+  background: #333;
+}
+
+.hp-bar {
+  height: 10px;
+  background: red;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+
+#infoPanel {
+  margin: 10px;
+}
+
+#status {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#popup {
+  height: 20px;
+  margin: 5px;
+  font-weight: bold;
+  color: yellow;
+}
+
+#log {
+  height: 100px;
+  overflow-y: auto;
+  border: 1px solid #555;
+  padding: 5px;
+  background: #111;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 10;
+}
+
+#inventory {
+  align-items: flex-start;
+  padding: 20px;
+}
+
+#inventoryItems, #shopItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.item {
+  border: 1px solid #555;
+  padding: 5px;
+  margin: 5px;
+  background: #444;
+  cursor: pointer;
+}
+
+.status-icon {
+  font-size: 14px;
+  margin-left: 2px;
+}
