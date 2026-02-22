@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Darkstopia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game">
+    <h1>Darkstopia</h1>
+    <div id="status">Wave: <span id="waveNum">0</span> - <span id="biomeName">-</span> | Gold: <span id="gold">0</span></div>
+    <div id="enemyPanel"></div>
+    <div id="teamPanel"></div>
+    <div id="infoPanel">
+      AP: <span id="ap">4</span> | TAP: <span id="tap">0</span>
+      <button id="teamMoveBtn" disabled>Team Move</button>
+      <button id="inventoryBtn">Inventory</button>
+      <button id="pauseBtn">Pause</button>
+    </div>
+    <div id="popup"></div>
+  <div id="log"></div>
+  <button id="nextWaveBtn">Start Game</button>
+  </div>
+  <div id="inventory" class="overlay" style="display:none;">
+    <h3>Inventory</h3>
+    <div id="inventoryItems"></div>
+    <button id="closeInventoryBtn">Close</button>
+  </div>
+  <div id="shopScreen" class="overlay" style="display:none;">
+    <h2>Shop</h2>
+    <div id="shopItems"></div>
+    <button id="closeShopBtn">Continue</button>
+  </div>
+  <div id="pauseScreen" class="overlay" style="display:none;">
+    <h2>Paused</h2>
+    <button id="resumeBtn">Resume</button>
+    <button id="saveBtn">Save</button>
+  </div>
+  <div id="titleScreen" class="overlay">
+    <h1>Darkstopia</h1>
+    <button id="startBtn">Start</button>
+    <button id="loadBtn">Load</button>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
